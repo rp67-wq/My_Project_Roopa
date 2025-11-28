@@ -1,0 +1,365 @@
+[0m15:06:51.074726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B2A27C4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B26BFD700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B2AA19F70>]}
+
+
+============================== 15:06:51.082885 | f312901f-3632-47a0-b224-e2ba37bed1b8 ==============================
+[0m15:06:51.082885 [info ] [MainThread]: Running with dbt=1.10.15
+[0m15:06:51.083310 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True', 'log_format': 'default', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_path': 'C:\\Users\\91973\\Documents\\Roopa\\logs', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Traform\\.dbt', 'invocation_command': 'dbt run --select my_first_dbt_model.sql', 'printer_width': '80', 'target_path': 'None'}
+[0m15:06:51.635781 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m15:06:51.635781 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m15:06:51.636778 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m15:06:51.926860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f312901f-3632-47a0-b224-e2ba37bed1b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B2A0F03B0>]}
+[0m15:06:52.019694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f312901f-3632-47a0-b224-e2ba37bed1b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B2CE21220>]}
+[0m15:06:52.021688 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m15:06:52.450021 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m15:06:52.465800 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:06:52.466838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f312901f-3632-47a0-b224-e2ba37bed1b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B2D009E80>]}
+[0m15:06:53.841254 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_project_roopa.example
+[0m15:06:53.847273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f312901f-3632-47a0-b224-e2ba37bed1b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B2CFFF740>]}
+[0m15:06:53.910409 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\91973\Documents\Roopa\target\manifest.json
+[0m15:06:53.919412 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\91973\Documents\Roopa\target\semantic_manifest.json
+[0m15:06:53.950877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f312901f-3632-47a0-b224-e2ba37bed1b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B2D21D2B0>]}
+[0m15:06:53.950877 [info ] [MainThread]: Found 504 macros
+[0m15:06:53.950877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f312901f-3632-47a0-b224-e2ba37bed1b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B28625340>]}
+[0m15:06:53.950877 [warn ] [MainThread]: The selection criterion 'my_first_dbt_model.sql' does not match any enabled nodes
+[0m15:06:53.950877 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:06:53.965031 [debug] [MainThread]: Command end result
+[0m15:06:53.983628 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\91973\Documents\Roopa\target\manifest.json
+[0m15:06:53.983628 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\91973\Documents\Roopa\target\semantic_manifest.json
+[0m15:06:53.998395 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\91973\Documents\Roopa\target\run_results.json
+[0m15:06:54.000390 [debug] [MainThread]: Command `dbt run` succeeded at 15:06:54.000390 after 3.08 seconds
+[0m15:06:54.001388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B2AD720F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B2A8B5E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B2A8B7B00>]}
+[0m15:06:54.001388 [debug] [MainThread]: Flushing usage events
+[0m15:06:56.367450 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:07:06.471882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C5FE154F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C62D43620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C633C4DA0>]}
+
+
+============================== 15:07:06.479827 | 84472121-610d-45a5-8edc-ffa661f09a1d ==============================
+[0m15:07:06.479827 [info ] [MainThread]: Running with dbt=1.10.15
+[0m15:07:06.481104 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'invocation_command': 'dbt run --select my_first_dbt_model.sql', 'no_print': 'None', 'log_format': 'default', 'printer_width': '80', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_path': 'C:\\Users\\91973\\Documents\\Roopa\\logs', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Traform\\.dbt', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m15:07:07.007713 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m15:07:07.007713 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m15:07:07.008712 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m15:07:07.266927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '84472121-610d-45a5-8edc-ffa661f09a1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C62D61280>]}
+[0m15:07:07.349063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '84472121-610d-45a5-8edc-ffa661f09a1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C63AB0500>]}
+[0m15:07:07.349063 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m15:07:07.756903 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m15:07:07.965694 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:07:07.965694 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:07:07.965694 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_project_roopa.example
+[0m15:07:07.981086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '84472121-610d-45a5-8edc-ffa661f09a1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C65D2F230>]}
+[0m15:07:08.043324 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\91973\Documents\Roopa\target\manifest.json
+[0m15:07:08.046312 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\91973\Documents\Roopa\target\semantic_manifest.json
+[0m15:07:08.082589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '84472121-610d-45a5-8edc-ffa661f09a1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C66041BB0>]}
+[0m15:07:08.082589 [info ] [MainThread]: Found 504 macros
+[0m15:07:08.082589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '84472121-610d-45a5-8edc-ffa661f09a1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C65F165D0>]}
+[0m15:07:08.082589 [warn ] [MainThread]: The selection criterion 'my_first_dbt_model.sql' does not match any enabled nodes
+[0m15:07:08.082589 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:07:08.082589 [debug] [MainThread]: Command end result
+[0m15:07:08.115965 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\91973\Documents\Roopa\target\manifest.json
+[0m15:07:08.133060 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\91973\Documents\Roopa\target\semantic_manifest.json
+[0m15:07:08.136602 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\91973\Documents\Roopa\target\run_results.json
+[0m15:07:08.136602 [debug] [MainThread]: Command `dbt run` succeeded at 15:07:08.136602 after 1.81 seconds
+[0m15:07:08.136602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C63912D20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C61325520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017C6337B140>]}
+[0m15:07:08.136602 [debug] [MainThread]: Flushing usage events
+[0m15:07:10.252023 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:07:25.048291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C03B36690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C018DA060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C019F4F50>]}
+
+
+============================== 15:07:25.048291 | 6fa2a84c-a9a6-4e90-b37b-af28fe5fc4a0 ==============================
+[0m15:07:25.048291 [info ] [MainThread]: Running with dbt=1.10.15
+[0m15:07:25.048291 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'use_colors': 'True', 'printer_width': '80', 'log_format': 'default', 'write_json': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\91973\\Documents\\Roopa\\logs', 'fail_fast': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Traform\\.dbt', 'invocation_command': 'dbt run --select my_first_dbt_model.sql', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m15:07:25.581701 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m15:07:25.581701 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m15:07:25.581701 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m15:07:25.845661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6fa2a84c-a9a6-4e90-b37b-af28fe5fc4a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C034C0A10>]}
+[0m15:07:25.935010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6fa2a84c-a9a6-4e90-b37b-af28fe5fc4a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C056818B0>]}
+[0m15:07:25.937004 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m15:07:26.368134 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m15:07:26.549500 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:07:26.550497 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:07:26.551501 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_project_roopa.example
+[0m15:07:26.557478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6fa2a84c-a9a6-4e90-b37b-af28fe5fc4a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C064C5370>]}
+[0m15:07:26.652450 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\91973\Documents\Roopa\target\manifest.json
+[0m15:07:26.655479 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\91973\Documents\Roopa\target\semantic_manifest.json
+[0m15:07:26.691727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6fa2a84c-a9a6-4e90-b37b-af28fe5fc4a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C067E2240>]}
+[0m15:07:26.692726 [info ] [MainThread]: Found 504 macros
+[0m15:07:26.693384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6fa2a84c-a9a6-4e90-b37b-af28fe5fc4a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C06741580>]}
+[0m15:07:26.693384 [warn ] [MainThread]: The selection criterion 'my_first_dbt_model.sql' does not match any enabled nodes
+[0m15:07:26.695420 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:07:26.699338 [debug] [MainThread]: Command end result
+[0m15:07:26.735070 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\91973\Documents\Roopa\target\manifest.json
+[0m15:07:26.735070 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\91973\Documents\Roopa\target\semantic_manifest.json
+[0m15:07:26.748295 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\91973\Documents\Roopa\target\run_results.json
+[0m15:07:26.748295 [debug] [MainThread]: Command `dbt run` succeeded at 15:07:26.748295 after 1.86 seconds
+[0m15:07:26.748295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0372C5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C03AF5BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C03AF78F0>]}
+[0m15:07:26.748295 [debug] [MainThread]: Flushing usage events
+[0m15:07:28.818465 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:08:27.178693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D340E82390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D33D3854F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D340D5CBF0>]}
+
+
+============================== 15:08:27.178693 | 7b021cdf-3d7a-4561-a69e-fe532dea672c ==============================
+[0m15:08:27.178693 [info ] [MainThread]: Running with dbt=1.10.15
+[0m15:08:27.178693 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'profiles_dir': 'C:\\Users\\Traform\\.dbt', 'cache_selected_only': 'False', 'use_colors': 'True', 'no_print': 'None', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_path': 'C:\\Users\\91973\\Documents\\Roopa\\logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select roopa.sql', 'printer_width': '80', 'target_path': 'None'}
+[0m15:08:27.712817 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m15:08:27.713817 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m15:08:27.713817 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m15:08:27.993797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7b021cdf-3d7a-4561-a69e-fe532dea672c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3431C4FB0>]}
+[0m15:08:28.061819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7b021cdf-3d7a-4561-a69e-fe532dea672c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3429F6240>]}
+[0m15:08:28.078718 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m15:08:28.511913 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m15:08:28.710488 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:08:28.711494 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:08:28.711945 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_project_roopa.example
+[0m15:08:28.711945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7b021cdf-3d7a-4561-a69e-fe532dea672c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D342BCDEE0>]}
+[0m15:08:28.791330 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\91973\Documents\Roopa\target\manifest.json
+[0m15:08:28.794322 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\91973\Documents\Roopa\target\semantic_manifest.json
+[0m15:08:28.831190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7b021cdf-3d7a-4561-a69e-fe532dea672c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D3431C4410>]}
+[0m15:08:28.832188 [info ] [MainThread]: Found 504 macros
+[0m15:08:28.833225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7b021cdf-3d7a-4561-a69e-fe532dea672c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D343645850>]}
+[0m15:08:28.833225 [warn ] [MainThread]: The selection criterion 'roopa.sql' does not match any enabled nodes
+[0m15:08:28.835222 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:08:28.838679 [debug] [MainThread]: Command end result
+[0m15:08:28.893821 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\91973\Documents\Roopa\target\manifest.json
+[0m15:08:28.896360 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\91973\Documents\Roopa\target\semantic_manifest.json
+[0m15:08:28.896360 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\91973\Documents\Roopa\target\run_results.json
+[0m15:08:28.910425 [debug] [MainThread]: Command `dbt run` succeeded at 15:08:28.896360 after 1.88 seconds
+[0m15:08:28.911039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D340D5CBF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D340227A40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D34330E750>]}
+[0m15:08:28.912037 [debug] [MainThread]: Flushing usage events
+[0m15:08:31.564761 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:08:38.811586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0F50AC530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0F5ADD1C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0F5ADD550>]}
+
+
+============================== 15:08:38.828085 | 4e186dd5-1254-4b0d-9a28-58addc05444f ==============================
+[0m15:08:38.828085 [info ] [MainThread]: Running with dbt=1.10.15
+[0m15:08:38.828085 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'target_path': 'None', 'no_print': 'None', 'invocation_command': 'dbt run --select roopa', 'log_format': 'default', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'C:\\Users\\91973\\Documents\\Roopa\\logs', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Traform\\.dbt', 'use_colors': 'True', 'printer_width': '80', 'write_json': 'True'}
+[0m15:08:39.354647 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m15:08:39.354647 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m15:08:39.355647 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m15:08:39.627954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4e186dd5-1254-4b0d-9a28-58addc05444f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0F3024860>]}
+[0m15:08:39.727896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4e186dd5-1254-4b0d-9a28-58addc05444f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0F61B74D0>]}
+[0m15:08:39.727896 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m15:08:40.161554 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m15:08:40.344607 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:08:40.344607 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:08:40.344607 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_project_roopa.example
+[0m15:08:40.344607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4e186dd5-1254-4b0d-9a28-58addc05444f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0F8135370>]}
+[0m15:08:40.425101 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\91973\Documents\Roopa\target\manifest.json
+[0m15:08:40.428094 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\91973\Documents\Roopa\target\semantic_manifest.json
+[0m15:08:40.461674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4e186dd5-1254-4b0d-9a28-58addc05444f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0F8751E50>]}
+[0m15:08:40.461674 [info ] [MainThread]: Found 504 macros
+[0m15:08:40.461674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4e186dd5-1254-4b0d-9a28-58addc05444f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0F8621580>]}
+[0m15:08:40.461674 [warn ] [MainThread]: The selection criterion 'roopa' does not match any enabled nodes
+[0m15:08:40.461674 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:08:40.461674 [debug] [MainThread]: Command end result
+[0m15:08:40.494776 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\91973\Documents\Roopa\target\manifest.json
+[0m15:08:40.494776 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\91973\Documents\Roopa\target\semantic_manifest.json
+[0m15:08:40.494776 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\91973\Documents\Roopa\target\run_results.json
+[0m15:08:40.510823 [debug] [MainThread]: Command `dbt run` succeeded at 15:08:40.510823 after 1.84 seconds
+[0m15:08:40.511818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0F573A5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0F83ABE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0F8111EB0>]}
+[0m15:08:40.511818 [debug] [MainThread]: Flushing usage events
+[0m15:08:42.898872 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:08:56.028082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D207F83440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D207C93770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D20239C5C0>]}
+
+
+============================== 15:08:56.046483 | 22f978ed-c904-4877-b91f-19c38a17d2a7 ==============================
+[0m15:08:56.046483 [info ] [MainThread]: Running with dbt=1.10.15
+[0m15:08:56.048430 [debug] [MainThread]: running dbt with arguments {'profiles_dir': 'C:\\Users\\Traform\\.dbt', 'no_print': 'None', 'write_json': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'log_path': 'C:\\Users\\91973\\Documents\\Roopa\\logs', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'printer_width': '80', 'target_path': 'None'}
+[0m15:08:56.110536 [info ] [MainThread]: dbt version: 1.10.15
+[0m15:08:56.111893 [info ] [MainThread]: python version: 3.12.10
+[0m15:08:56.112944 [info ] [MainThread]: python path: C:\Users\Traform\AppData\Local\Programs\Python\Python312\python.exe
+[0m15:08:56.114502 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m15:08:56.660105 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m15:08:56.660659 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m15:08:56.660659 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m15:08:56.760136 [info ] [MainThread]: Using profiles dir at C:\Users\Traform\.dbt
+[0m15:08:56.760483 [info ] [MainThread]: Using profiles.yml file at C:\Users\Traform\.dbt\profiles.yml
+[0m15:08:56.760483 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\91973\Documents\Roopa\dbt_project.yml
+[0m15:08:56.760483 [info ] [MainThread]: adapter type: snowflake
+[0m15:08:56.760483 [info ] [MainThread]: adapter version: 1.10.3
+[0m15:08:56.916777 [info ] [MainThread]: Configuration:
+[0m15:08:56.917733 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:08:56.917733 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:08:56.918835 [info ] [MainThread]: Required dependencies:
+[0m15:08:56.918835 [debug] [MainThread]: Executing "git --help"
+[0m15:08:56.961267 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:08:56.961267 [debug] [MainThread]: STDERR: "b''"
+[0m15:08:56.961267 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:08:56.961267 [info ] [MainThread]: Connection:
+[0m15:08:56.961267 [info ] [MainThread]:   account: cbbrhpz-ty77242
+[0m15:08:56.961267 [info ] [MainThread]:   user: APPA
+[0m15:08:56.961267 [info ] [MainThread]:   database: CPM_DB
+[0m15:08:56.961267 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m15:08:56.961267 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m15:08:56.961267 [info ] [MainThread]:   schema: CPS_RPS
+[0m15:08:56.961267 [info ] [MainThread]:   authenticator: None
+[0m15:08:56.961267 [info ] [MainThread]:   oauth_client_id: None
+[0m15:08:56.961267 [info ] [MainThread]:   query_tag: None
+[0m15:08:56.976714 [info ] [MainThread]:   client_session_keep_alive: False
+[0m15:08:56.977710 [info ] [MainThread]:   host: None
+[0m15:08:56.978707 [info ] [MainThread]:   port: None
+[0m15:08:56.979729 [info ] [MainThread]:   proxy_host: None
+[0m15:08:56.980700 [info ] [MainThread]:   proxy_port: None
+[0m15:08:56.981452 [info ] [MainThread]:   protocol: None
+[0m15:08:56.981452 [info ] [MainThread]:   connect_retries: 1
+[0m15:08:56.981452 [info ] [MainThread]:   connect_timeout: None
+[0m15:08:56.981452 [info ] [MainThread]:   retry_on_database_errors: False
+[0m15:08:56.981452 [info ] [MainThread]:   retry_all: False
+[0m15:08:56.981452 [info ] [MainThread]:   insecure_mode: False
+[0m15:08:56.981452 [info ] [MainThread]:   reuse_connections: True
+[0m15:08:56.981452 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m15:08:56.981452 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m15:08:56.981452 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m15:08:57.412608 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m15:08:57.525725 [debug] [MainThread]: Using snowflake connection "debug"
+[0m15:08:57.526742 [debug] [MainThread]: On debug: select 1 as id
+[0m15:08:57.527127 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:08:59.213272 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.691 seconds
+[0m15:08:59.213272 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:08:59.213272 [info ] [MainThread]: [32mAll checks passed![0m
+[0m15:08:59.230408 [debug] [MainThread]: Command `dbt debug` succeeded at 15:08:59.230408 after 3.37 seconds
+[0m15:08:59.232404 [debug] [MainThread]: Connection 'debug' was left open.
+[0m15:08:59.233400 [debug] [MainThread]: On debug: Close
+[0m15:08:59.479970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D207E05B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D20239C5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D20A743920>]}
+[0m15:08:59.480940 [debug] [MainThread]: Flushing usage events
+[0m15:09:01.613647 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:09:10.459959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280A1BCC5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280A77921E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280A7792630>]}
+
+
+============================== 15:09:10.459959 | 2d617934-8531-4b33-afd2-5316bd412a3e ==============================
+[0m15:09:10.459959 [info ] [MainThread]: Running with dbt=1.10.15
+[0m15:09:10.459959 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Traform\\.dbt', 'log_format': 'default', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'log_path': 'C:\\Users\\91973\\Documents\\Roopa\\logs', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt compile', 'printer_width': '80', 'write_json': 'True'}
+[0m15:09:10.993254 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m15:09:10.993254 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m15:09:10.993254 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m15:09:11.293153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2d617934-8531-4b33-afd2-5316bd412a3e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280A8E1F8C0>]}
+[0m15:09:11.376299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2d617934-8531-4b33-afd2-5316bd412a3e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280A9EB10A0>]}
+[0m15:09:11.376299 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m15:09:11.810774 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m15:09:12.010014 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:09:12.011013 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:09:12.011013 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_project_roopa.example
+[0m15:09:12.017993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2d617934-8531-4b33-afd2-5316bd412a3e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280AA093770>]}
+[0m15:09:12.093031 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\91973\Documents\Roopa\target\manifest.json
+[0m15:09:12.093031 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\91973\Documents\Roopa\target\semantic_manifest.json
+[0m15:09:12.126514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2d617934-8531-4b33-afd2-5316bd412a3e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280AA3D0560>]}
+[0m15:09:12.126514 [info ] [MainThread]: Found 504 macros
+[0m15:09:12.126514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2d617934-8531-4b33-afd2-5316bd412a3e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280AA090DA0>]}
+[0m15:09:12.126514 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:09:12.142363 [debug] [MainThread]: Command end result
+[0m15:09:12.182948 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\91973\Documents\Roopa\target\manifest.json
+[0m15:09:12.185965 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\91973\Documents\Roopa\target\semantic_manifest.json
+[0m15:09:12.190920 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\91973\Documents\Roopa\target\run_results.json
+[0m15:09:12.192649 [debug] [MainThread]: Command `dbt compile` succeeded at 15:09:12.192649 after 1.89 seconds
+[0m15:09:12.193255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280A78C47A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280A9EB2330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280A557DE50>]}
+[0m15:09:12.193255 [debug] [MainThread]: Flushing usage events
+[0m15:09:14.255460 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:11:03.005621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269063B74D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002690898BFE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002690898BE30>]}
+
+
+============================== 15:11:03.022473 | 6fbfa507-0a9a-4432-bb0b-0e4d9ff037f6 ==============================
+[0m15:11:03.022473 [info ] [MainThread]: Running with dbt=1.10.15
+[0m15:11:03.022473 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'use_colors': 'True', 'write_json': 'True', 'profiles_dir': 'C:\\Users\\Traform\\.dbt', 'printer_width': '80', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'C:\\Users\\91973\\Documents\\Roopa\\logs', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt run --select roopa.sql', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m15:11:03.626193 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m15:11:03.626193 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m15:11:03.627193 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m15:11:03.921864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6fbfa507-0a9a-4432-bb0b-0e4d9ff037f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269064DC770>]}
+[0m15:11:04.014959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6fbfa507-0a9a-4432-bb0b-0e4d9ff037f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002690B3798E0>]}
+[0m15:11:04.017122 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m15:11:04.483276 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m15:11:04.721149 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 4 files added, 0 files changed.
+[0m15:11:04.721149 [debug] [MainThread]: Partial parsing: added file: my_project_roopa://models\example\my_first_dbt_model.sql
+[0m15:11:04.721149 [debug] [MainThread]: Partial parsing: added file: my_project_roopa://models\example\my_second_dbt_model.sql
+[0m15:11:04.721149 [debug] [MainThread]: Partial parsing: added file: my_project_roopa://models\example\schema.yml
+[0m15:11:04.721149 [debug] [MainThread]: Partial parsing: added file: my_project_roopa://models\example\roopa.sql
+[0m15:11:05.430828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6fbfa507-0a9a-4432-bb0b-0e4d9ff037f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002690BE3F0B0>]}
+[0m15:11:05.537615 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\91973\Documents\Roopa\target\manifest.json
+[0m15:11:05.537615 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\91973\Documents\Roopa\target\semantic_manifest.json
+[0m15:11:05.571064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6fbfa507-0a9a-4432-bb0b-0e4d9ff037f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002690BF904A0>]}
+[0m15:11:05.571064 [info ] [MainThread]: Found 3 models, 4 data tests, 504 macros
+[0m15:11:05.586172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6fbfa507-0a9a-4432-bb0b-0e4d9ff037f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002690BDA1280>]}
+[0m15:11:05.587701 [info ] [MainThread]: 
+[0m15:11:05.587701 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m15:11:05.587701 [info ] [MainThread]: 
+[0m15:11:05.592030 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:11:05.593625 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_CPM_DB'
+[0m15:11:05.721739 [debug] [ThreadPool]: Using snowflake connection "list_CPM_DB"
+[0m15:11:05.722737 [debug] [ThreadPool]: On list_CPM_DB: show terse schemas in database CPM_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "my_project_roopa", "target_name": "dev", "connection_name": "list_CPM_DB"} */
+[0m15:11:05.723766 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:11:06.755197 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.043 seconds
+[0m15:11:06.771266 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_CPM_DB_CPS_RPS'
+[0m15:11:06.799038 [debug] [ThreadPool]: Using snowflake connection "list_CPM_DB_CPS_RPS"
+[0m15:11:06.799038 [debug] [ThreadPool]: On list_CPM_DB_CPS_RPS: show objects in CPM_DB.CPS_RPS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "my_project_roopa", "target_name": "dev", "connection_name": "list_CPM_DB_CPS_RPS"} */;
+[0m15:11:06.800035 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:11:07.542823 [debug] [ThreadPool]: SQL status: SUCCESS 10 in 0.743 seconds
+[0m15:11:07.557034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6fbfa507-0a9a-4432-bb0b-0e4d9ff037f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002690BFE0500>]}
+[0m15:11:07.631084 [debug] [Thread-1 (]: Began running node model.my_project_roopa.roopa
+[0m15:11:07.632102 [info ] [Thread-1 (]: 1 of 1 START sql table model CPS_RPS.roopa ..................................... [RUN]
+[0m15:11:07.632785 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.my_project_roopa.roopa'
+[0m15:11:07.633827 [debug] [Thread-1 (]: Began compiling node model.my_project_roopa.roopa
+[0m15:11:07.637654 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_project_roopa.roopa"
+[0m15:11:07.637654 [debug] [Thread-1 (]: Began executing node model.my_project_roopa.roopa
+[0m15:11:07.731439 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_project_roopa.roopa"
+[0m15:11:07.734398 [debug] [Thread-1 (]: Using snowflake connection "model.my_project_roopa.roopa"
+[0m15:11:07.735431 [debug] [Thread-1 (]: On model.my_project_roopa.roopa: create or replace transient table CPM_DB.CPS_RPS.roopa
+    
+    
+    
+    as (
+
+with source_data as (
+
+select * from CPM_DB.CPS_RPS.TEST123
+
+)
+
+select *
+from source_data
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "my_project_roopa", "target_name": "dev", "node_id": "model.my_project_roopa.roopa"} */;
+[0m15:11:07.735431 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:11:09.657192 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.926 seconds
+[0m15:11:09.720779 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6fbfa507-0a9a-4432-bb0b-0e4d9ff037f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269064B7980>]}
+[0m15:11:09.720779 [info ] [Thread-1 (]: 1 of 1 OK created sql table model CPS_RPS.roopa ................................ [[32mSUCCESS 1[0m in 2.09s]
+[0m15:11:09.720779 [debug] [Thread-1 (]: Finished running node model.my_project_roopa.roopa
+[0m15:11:09.720779 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:11:09.720779 [debug] [MainThread]: Connection 'list_CPM_DB' was left open.
+[0m15:11:09.720779 [debug] [MainThread]: On list_CPM_DB: Close
+[0m15:11:09.937713 [debug] [MainThread]: Connection 'list_CPM_DB_CPS_RPS' was left open.
+[0m15:11:09.937713 [debug] [MainThread]: On list_CPM_DB_CPS_RPS: Close
+[0m15:11:10.136984 [debug] [MainThread]: Connection 'model.my_project_roopa.roopa' was left open.
+[0m15:11:10.139004 [debug] [MainThread]: On model.my_project_roopa.roopa: Close
+[0m15:11:10.424220 [info ] [MainThread]: 
+[0m15:11:10.424220 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.83 seconds (4.83s).
+[0m15:11:10.424220 [debug] [MainThread]: Command end result
+[0m15:11:10.491812 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\91973\Documents\Roopa\target\manifest.json
+[0m15:11:10.491812 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\91973\Documents\Roopa\target\semantic_manifest.json
+[0m15:11:10.511143 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\91973\Documents\Roopa\target\run_results.json
+[0m15:11:10.512142 [info ] [MainThread]: 
+[0m15:11:10.513105 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:11:10.513676 [info ] [MainThread]: 
+[0m15:11:10.513676 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:11:10.515709 [debug] [MainThread]: Command `dbt run` succeeded at 15:11:10.515709 after 7.69 seconds
+[0m15:11:10.515709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269066B66F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026909511130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026909512AE0>]}
+[0m15:11:10.516707 [debug] [MainThread]: Flushing usage events
+[0m15:11:13.137279 [debug] [MainThread]: An error was encountered while trying to flush usage events
