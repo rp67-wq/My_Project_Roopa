@@ -32,5 +32,15 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   my_project_roopa:
     # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    Staging:
+      +schema: STAGE_TEST
+      +materialized: table
+
+    Intermediate:
+      +schema: TRANSFORMER_TEST
+      +materialized: table
+
+    Final:
+      +schema: MART_TEST
+      +materialized: DMART_TEST
+    
