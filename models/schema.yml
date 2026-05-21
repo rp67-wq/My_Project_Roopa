@@ -9,6 +9,6 @@ sources:
 models:
   - name: my_first_dbt_model
   - name: my_second_dbt_model
-  - name: inter_m1
+  - name: inter_M1
   - name: final_m2
   - name: orders_anotherone
