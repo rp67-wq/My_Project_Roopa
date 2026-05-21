@@ -42,5 +42,5 @@ models:
 
     Final:
       +schema: MART_TEST
-      +materialized: DMART_TEST
+      +materialized: table
     

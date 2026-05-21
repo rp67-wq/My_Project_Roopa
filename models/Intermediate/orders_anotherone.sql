@@ -1,4 +1,8 @@
-{{ config(materialized='table') }}
+{{ config(
+    materialized='table',
+    schema='TRANSFORMER_TEST'
+) }}
+
 
 with test as (
 select order_id from {{source('sources','ORDERS')}}
