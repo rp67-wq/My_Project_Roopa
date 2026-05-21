@@ -1,0 +1,14 @@
+sources:
+  - name: sources
+    database: DEV_TEST
+    schema: DBT_RPS
+    tables:
+      - name: ORDERS
+      - name: SALES
+
+models:
+  - name: my_first_dbt_model
+  - name: my_second_dbt_model
+  - name: inter_M1
+  - name: final_m2
+  - name: orders_anotherone

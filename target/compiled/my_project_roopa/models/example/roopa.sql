@@ -1,8 +1,9 @@
 
 
+
 with source_data as (
 
-select * from CPM_DB.CPS_RPS.TEST123
+select * from DEV_TEST.CPS_RPS.TEST123
 
 )
 
