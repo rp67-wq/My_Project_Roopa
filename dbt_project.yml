@@ -33,14 +33,14 @@ models:
   my_project_roopa:
     # Config indicated by + and applies to all files under models/example/
     Staging:
-      +schema: STAGE_TEST
+      +schema: STAGE
       +materialized: table
 
     Intermediate:
-      +schema: TRANSFORMER_TEST
+      +schema: TRANSFORMER
       +materialized: table
 
     Final:
-      +schema: MART_TEST
+      +schema: MART
       +materialized: table
     
