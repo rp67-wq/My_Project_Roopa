@@ -1,6 +1,5 @@
 {{ config(
-    materialized='table',
-    schema='MART_TEST'
+    materialized='table'
 ) }}
 
 

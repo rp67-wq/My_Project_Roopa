@@ -1,6 +1,5 @@
 {{ config(
-    materialized='table',
-    schema='STAGE_TEST'
+    materialized='table'
 ) }}
 
 
