@@ -1,6 +1,5 @@
 {{ config(
-    materialized='table',
-    schema='TRANSFORMER_TEST'
+    materialized='table'
 ) }}
 
 
